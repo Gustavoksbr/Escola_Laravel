@@ -7,10 +7,13 @@ use App\Http\Controllers\AlunoController;
 use App\Http\Controllers\Professor_turmaController;
 use App\Http\Controllers\MensagemController;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/',function()
+{    return view('home');
 });
 
+
+
+//teste conexão
 Route::get('/teste',function(){
     return view('testeconexao');
 });
@@ -19,7 +22,6 @@ Route::get('/teste',function(){
 Route::get("/mensagem/{mensagem}", [MensagemController::class, 'mostrarMensagem']);
 
 //turma
-
 Route::resources([
     'turma' => TurmaController::class,
 ]);
