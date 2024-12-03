@@ -15,7 +15,14 @@
     composer install
     ```
 
-4. Clone o arquivo `.env.example` com o nome de`.env`:
+4. Clone o arquivo `.env.example` com o nome de `.env`:
+
+    Windows:
+    ```sh
+    copy .env.example .env
+    ```
+
+    Linux/Mac:
     ```sh
     cp .env.example .env
     ```
