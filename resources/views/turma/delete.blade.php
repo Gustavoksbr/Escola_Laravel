@@ -12,7 +12,7 @@
 <body>
     <main class="container">
         <h1>Formulário de Exclusão de Turmas</h1>
-        <form action="{{ route('turma.update', $turma->id)}}" method="POST">
+        <form action="{{ route('turma.destroy', $turma->id)}}" method="POST">
             @CSRF
             @method('DELETE')
             <div class="row">

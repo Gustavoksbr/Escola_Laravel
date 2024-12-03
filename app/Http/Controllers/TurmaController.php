@@ -45,6 +45,7 @@ class TurmaController extends Controller
     {
         //
         $turma = Turma::findOrFail($id);
+        dd($turma);
         return view("turma.edit",compact('turma'));
     }
 

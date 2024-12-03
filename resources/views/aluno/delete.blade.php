@@ -12,7 +12,7 @@
 <body>
     <main class="container">
         <h1>Formulário de Exclusão de Alunos</h1>
-        <form action="{{ route('aluno.update', $aluno->id)}}" method="POST">
+        <form action="{{ route('aluno.destroy', $aluno->id)}}" method="POST">
             @CSRF
             @method('DELETE')
             <div class="row">
